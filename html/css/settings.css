@@ -1,0 +1,453 @@
+.button {
+    position: relative;
+    /* left: 2vw; */
+    top: 2vh;
+    margin: auto;
+}
+
+.mode-img {
+    width: 2vh;
+    height: 2vh;
+    position: relative;
+}
+
+.mode {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.settings-app {
+    display: none;
+    height: 100%;
+    width: 97.5%;
+    background: var( --bg);
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.settings-main-app-header {
+    width: 15%;
+    border-radius: 20%;
+    position: fixed;
+    padding: 5vh 0 0 1.85vh;
+    /* font-family: 'Samsung Sans Medium'; */
+    font-size: 2vh;
+    color: var(--text);
+    background-color: var(--bg);
+    overflow: hidden;
+    z-index: 50;
+}
+
+.settings-app-header {
+    width: 100%;
+    position: relative;
+    padding: 5vh 0 0.5vh 1.85vh;
+    /* font-family: 'Samsung Sans Medium'; */
+    font-size: 2vh;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+.setting-app-body {
+    position: relative;
+    top: 9vh;
+    height: 100%;
+}
+
+.settings-app-tab-modes {
+    position: relative;
+    height: 22vh;
+    width: 100%;
+}
+
+.settings-app-tab-appereance {
+    position: relative;
+    top: 2.5vh;
+    height: 22vh;
+    width: 100%;
+}
+
+.settings-app-tab-information {
+    position: relative;
+    top: 1vh;
+    height: 22vh;
+    width: 100%;
+}
+
+.settings-app-tab {
+    position: relative;
+    width: 100%;
+    height: 6vh;
+    margin: 0 auto;
+    transition: all .1s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.0);
+}
+
+.settings-app-tab-header {
+    position: relative;
+    left: 10px;
+    height: 2.6vh;
+    /* font-family: 'Samsung Sans Medium'; */
+    font-size: 1.5vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+}
+
+.settings-app-tab-header>p {
+    padding-left: 1vh;
+    color: var(--text);
+}
+
+.settings-tab-icon {
+    position: absolute;
+    left: 2vh;
+    top: 1.5vh;
+    font-size: 2.3vh;
+}
+
+.settings-tab-icon>img {
+    position: absolute;
+    width: 3.3vh;
+    height: 3.3vh;
+    border-radius: 50%;
+    box-shadow: 0 0 .5vh 0 rgba(0, 0, 0, 0.05);
+    margin-left: -.3vh;
+}
+
+.settings-tab-title {
+    position: absolute;
+    left: 6.2vh;
+    top: 1.2vh;
+    font-size: 1.3vh;
+    /* font-family: 'Samsung Sans Medium'; */
+    color: var(--text);
+}
+
+.settings-tab-description {
+    position: absolute;
+    left: 6.2vh;
+    top: 3.2vh;
+    font-size: 1.2vh;
+    /* font-family: 'Samsung Sans regular'; */
+    color: var(--text-color);
+}
+
+.settings-font-tab,
+.settings-background-tab,
+.settings-profilepicture-tab {
+    display: block;
+    position: absolute;
+    top: -100%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg)
+}
+
+.pick {
+    position: relative;
+    width: 3.3vh;
+    height: 3.3vh;
+    border-radius: 50%;
+    border: 2px solid;
+    left: 1.5vh;
+    top: 0.8vh;
+}
+
+.font-select {
+    position: relative;
+    width: 100%;
+    top: 2vh;
+    left: 6vh;
+}
+
+#font {
+    padding: 5px 8px 5px 8px;
+    width: 180px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--text-color);
+    color: var(--select-text);
+}
+
+.background-options,
+.font-options,
+.profilepicture-options {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 9vh;
+}
+
+.background-option,
+.font-option,
+.profilepicture-option {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    background-color: var(--bg);
+}
+
+.background-option-title,
+.font-option-title,
+.profilepicture-option-title {
+    width: 100%;
+    position: absolute;
+    left: 1vh;
+    top: 0.25vh;
+    color: var(--text);
+    font-weight: bolder;
+    font-size: 1.3vh;
+    padding-top: 1.2vh;
+    padding-bottom: .2vh;
+    border-top: 1px solid rgba(0, 0, 0, 0.17);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+}
+
+.background-option-title,
+.profilepicture-option-title {
+    padding-top: 1.2vh;
+    padding-bottom: 2vh;
+}
+
+.font-option-title>p,
+.background-option-title>p,
+.profilepicture-option-title>p {
+    position: relative;
+    left: 5vh;
+}
+
+.background-option-description,
+.profilepicture-option-description {
+    width: 23vh;
+    position: relative;
+    left: 6vh;
+    top: 1vh;
+    color: var(--text-color);
+    font-size: 1.1vh;
+}
+
+.background-option-current,
+.profilepicture-option-current {
+    position: absolute;
+    right: 3vh;
+    top: 1.5vh;
+    text-align: center;
+    font-size: 1.6vh;
+    color: var(--text);
+}
+
+.background-buttons,
+.font-buttons,
+.profilepicture-buttons {
+    position: absolute;
+    bottom: 3vh;
+    height: 5vh;
+    width: 100%;
+}
+
+.background-button,
+.font-button,
+.profilepicture-button {
+    position: relative;
+    float: left;
+    left: 1.6vh;
+    height: 3vh;
+    width: 5vw;
+    outline: none;
+    border: none;
+    margin: 2vh 2vh 0vh 2vh;
+    text-align: center;
+    font-size: 1.5vh;
+    background-color: var(--bg);
+}
+
+#accept-font,
+#accept-background,
+#accept-custom-background,
+#accept-profilepicture,
+#accept-custom-profilepicture {
+    color: var(--con-can-text);
+    background-color: var(--confirm);
+    border-radius: 20px;
+}
+
+#cancel-font,
+#cancel-background,
+#cancel-custom-background,
+#cancel-profilepicture,
+#cancel-custom-profilepicture {
+    color: var(--con-can-text);
+    background-color: var(--cancel);
+    border-radius: 20px;
+}
+
+.background-custom,
+.profilepicture-custom {
+    display: none;
+    position: absolute;
+    height: 40%;
+    width: 80%;
+    background-color: var(--bg);
+    box-shadow: inset 0px 0px 5px 0px var(--custom-shadow);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -23vh;
+    border-radius: 2vh;
+    overflow: hidden;
+}
+
+.background-custom-title,
+.profilepicture-custom-title {
+    padding: 2vh;
+    color: var(--text);
+    font-size: 1.5vh;
+    text-align: center;
+}
+
+.custom-background-input,
+.custom-profilepicture-input {
+    position: absolute;
+    left: 1vh;
+    background: none;
+    border: none;
+    outline: none;
+    height: 3.5vh;
+    width: 21vh;
+    color: var(--text-color);
+    font-weight: bolder;
+    background: var(--custom-input);
+    border-radius: 2vh;
+    text-align: center;
+}
+
+.custom-background-input::placeholder,
+.custom-profilepicture-input::placeholder {
+    color: var(--text-color);
+    font-weight: bolder;
+    text-align: center;
+}
+
+.background-custom-buttons,
+.profilepicture-custom-buttons {
+    position: absolute;
+    bottom: 2vh;
+    width: 100%;
+    height: 5vh;
+}
+
+.custom-background-button,
+.custom-profilepicture-button {
+    position: relative;
+    float: left;
+    left: 0.7vh;
+    margin: 0 1vh 0 1vh;
+    height: 3vh;
+    width: 5vw;
+    text-align: center;
+    font-size: 1.5vh;
+    outline: none;
+    border: none;
+}
+
+
+/* The switch - the box around the slider */
+
+.switch {
+    position: absolute;
+    /* display: inline-block; */
+    width: 50px;
+    height: 24px;
+    top: 50%;
+    right: 2vh;
+    transform: translateY(-50%);
+}
+
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--slider-back);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--text-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--slider-backcheck);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 24px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.settings-app::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    background-color: #CCCCCC;
+}
+
+.settings-app::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+}
+
+.settings-app::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--text-color);
+    background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent)
+}

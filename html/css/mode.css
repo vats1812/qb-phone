@@ -1,0 +1,67 @@
+html[data-theme="light"] {
+    /* SETTINGS CSS */
+    --bg: #ffffff;
+    --text-color: #003cff;
+    --button-bg: rgb(214, 214, 214);
+    --text: #222;
+    --select-text: white;
+    --slider-back: rgb(214, 214, 214);
+    --slider-backcheck: rgb(68, 67, 67);
+    --confirm: rgb(6, 216, 6);
+    --cancel: rgb(255, 0, 0);
+    --con-can-text: rgb(0, 0, 0);
+    --custom-input: rgb(184, 184, 184);
+    --custom-shadow: rgb(107, 107, 107, 0.445);
+    /* TWITTER CSS */
+    --tweet-blue: rgb(29, 161, 242);
+    --tweet-bg: rgb(255, 255, 255);
+    --tweet-head-border: rgba(20, 23, 26, 0.671);
+    --tweet-head-hover: rgb(170, 184, 194);
+    --tweet-message: rgb(233, 233, 233);
+    --tweet-text: rgb(0, 0, 0);
+    /* PHONE CSS */
+    --phn-bg: rgb(230, 230, 230);
+    --ttl-text: rgb(0, 0, 0);
+    --footer-bg: rgb(179, 179, 179);
+    --footer-hvr: rgb(194, 194, 194);
+    --keypad-inp-shadow: rgb(0, 0, 0, 0.5);
+    --recent-bdy: rgb(245, 245, 245, 0.788);
+    --recent-hvr: rgb(245, 245, 245, 0.5);
+    --recent-border: rgb(0, 0, 0, 0.5);
+    --add-bdy: rgb(255, 255, 255);
+    --wh-bg-img: url('../img/apps/whatsapp-chat.png')
+}
+
+html[data-theme="dark"] {
+    /* SETTINGS CSS */
+    --bg: #222;
+    --text-color: #ff0000;
+    --button-bg: rgb(68, 67, 67);
+    --text: #ffffff;
+    --select-text: black;
+    --slider-back: rgb(68, 67, 67);
+    --slider-backcheck: rgb(214, 214, 214);
+    --confirm: rgb(0, 120, 0);
+    --cancel: rgb(128, 0, 0);
+    --con-can-text: rgb(255, 255, 255);
+    --custom-input: rgb(214, 214, 214);
+    --custom-shadow: rgb(255, 255, 255, 0.445);
+    /* TWITTER CSS */
+    --tweet-blue: rgb(29, 168, 255);
+    --tweet-bg: rgb(0, 0, 0);
+    --tweet-head-border: rgb(158, 158, 158);
+    --tweet-head-hover: rgba(170, 184, 194, 0.438);
+    --tweet-message: rgba(160, 160, 160, 0.795);
+    --tweet-text: rgb(255, 255, 255);
+    /* PHONE CSS */
+    --phn-bg: rgb(0, 0, 0);
+    --ttl-text: rgb(255, 255, 255);
+    --footer-bg: rgb(56, 56, 56);
+    --footer-hvr: rgb(71, 71, 71);
+    --keypad-inp-shadow: rgb(255, 255, 255, 0.5);
+    --recent-bdy: rgb(56, 56, 56, 0.788);
+    --recent-hvr: rgb(56, 56, 56, 0.5);
+    --recent-border: rgb(255, 255, 255, 0.5);
+    --add-bdy: rgb(0, 0, 0);
+    --wh-bg-img: url('../img/apps/whatsapp-dark-chat.png')
+}
